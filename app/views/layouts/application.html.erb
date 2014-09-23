@@ -1,15 +1,92 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Homepage</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <meta charset="utf-8">
+  <meta name="google-site-verification" content="M63JTIooWx-_hZFGsBLzkFor8z79rG7sUpxA8fWX0yY" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes"/>
+  <title><%= content_for?(:title) ? yield(:title) : "MLG Brasil" %></title>
+  <link href="<%= image_path("favicon.ico") %>" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+  <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "MLG Brasil" %>">
+  <%= stylesheet_link_tag "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  <%= yield(:head) %>
 
 </head>
 <body>
+<div class="header_bg">
+  <div class="header_box">
+    <div class="header_logo"> <a href="http://www.mlgbrasil.tv"><%= image_tag('logo.png')%></a> </div>
+    <div class="menu">
+      <ul>
+        <li><a>HOME</a></li>
+        <li><a>STREAMS</a></li>
+        <li><a>GAMEBATTLES</a></li>
+        <li><a>CONTATO</a></li>
+      </ul>
+    </div>
+    <div class="login"> <a>ENTRAR</a> ou <a>CADASTRAR</a> </div>
+  </div>
+</div>
+<div class="player_bg">
+  <div class="player_anuncio"></div>
+  <div class="player"><%= image_tag('player.jpg') %></div>
+</div>
 
-<%= yield %>
-<div style="color: blue"><%= puts 'porra'%></div>
+
+<div class="content_box">
+  <%= yield %>
+</div>
+<div class="footer_bg">
+  <div class="footer_box">
+    <div class="footer_sitemap">
+      <h3>MLG BRASIL</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Play</a></li>
+        <li><a href="#">Watch</a></li>
+        <li><a href="#">Store</a></li>
+        <li><a href="#">Forums</a></li>
+        <li><a href="#">TeamBuilder</a></li>
+      </ul>
+    </div>
+    <div class="footer_sitemap" style="width: 140px">
+      <h3>SOBRE A MLG BRASIL</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Play</a></li>
+        <li><a href="#">Watch</a></li>
+        <li><a href="#">Store</a></li>
+        <li><a href="#">Forums</a></li>
+        <li><a href="#">TeamBuilder</a></li>
+      </ul>
+    </div>
+    <div class="footer_sitemap">
+      <h3>SUPORTE</h3>
+      <ul>
+        <li><a href="#">What is MLG?</a></li>
+        <li><a href="#">Advertise</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Executive Team</a></li>
+        <li><a href="#">Press Inquiries</a></li>
+      </ul>
+    </div>
+    <div class="footer_sitemap">
+      <h3>NEWS</h3>
+      <ul>
+        <li><a href="#">General Support</a></li>
+        <li><a href="#">Match Support</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer_social">
+      <h3>SIGA NOSSAS REDES SOCIAIS</h3>
+      <a class="footer_social_icon fb" href="#"></a>
+      <a class="footer_social_icon tw" href="#"></a>
+      <a class="footer_social_icon yt" href="#"></a>
+      <a class="footer_social_icon in" href="#"></a>
+    </div>
+  </div>
+</div>
 </body>
 </html>
