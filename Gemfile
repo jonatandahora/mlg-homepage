@@ -47,3 +47,4 @@ end
 #Restful plugin
 gem 'httparty'
 gem 'rest-client'
+gem 'unicorn'

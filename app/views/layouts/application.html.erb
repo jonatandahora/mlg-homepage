@@ -9,24 +9,14 @@
   <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "MLG Brasil" %>">
   <%= stylesheet_link_tag "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
+  <link href="http://s3-sa-east-1.amazonaws.com/mlg-assets/assets/js_header.css" media="screen" rel="stylesheet" type="text/css">
+  <script src="http://s3-sa-east-1.amazonaws.com/mlg-assets/assets/js_header.js" type="text/javascript"></script>
   <%= csrf_meta_tags %>
   <%= yield(:head) %>
 
 </head>
 <body>
-<div class="header_bg">
-  <div class="header_box">
-    <div class="header_logo"> <a href="http://www.mlgbrasil.tv"><%= image_tag('logo.png')%></a> </div>
-    <div class="menu">
-      <ul>
-        <li><a>HOME</a></li>
-        <li><a>STREAMS</a></li>
-        <li><a>GAMEBATTLES</a></li>
-        <li><a>CONTATO</a></li>
-      </ul>
-    </div>
-    <div class="login"> <a>ENTRAR</a> ou <a>CADASTRAR</a> </div>
-  </div>
+<div id="mlg-header" class="mlg-header-bg">
 </div>
 <div class="player_bg">
   <div class="player_anuncio"></div>
