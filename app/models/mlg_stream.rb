@@ -15,8 +15,8 @@ class MlgStream
 
   def self.get_stream_status(stream_name)
     response = get("/service/streams/status/#{stream_name}")
-    if(response =='Cannot GET /service/streams/status/ ')
-      return response = [07]
+    if(response =='Cannot GET /service/streams/status/')
+      return response = []
     end
     if response['status_code'] == 200
       return response['data']
