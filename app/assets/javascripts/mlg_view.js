@@ -1,0 +1,1 @@
+var MlgView= MlgObject.extend({init:function(a){this._super();var b=this;b.elem=a},$:function(a){return this.elem.find(a)}});

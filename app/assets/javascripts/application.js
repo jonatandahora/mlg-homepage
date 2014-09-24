@@ -14,4 +14,9 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require widgets
+//= require mlg_api_client
+//= require mlg_channel
+//= require mlg_model
+//= require mlg_view
+//= require swfobject
 //= require_tree .

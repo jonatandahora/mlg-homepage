@@ -140,8 +140,11 @@ body {
     background: #202a59 image_url("menu_img.png") no-repeat bottom center;
 }
 .player_bg{
-    height: 578px;
-    background: #000000 image_url("bg_player.jpg") repeat-x center top;
+  width: 1000px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background: none;
 }
 .player_anuncio{
     width: 1000px;

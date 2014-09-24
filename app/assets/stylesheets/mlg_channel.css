@@ -1,0 +1,997 @@
+*, *:before, *:after {
+    -webkit-font-smoothing: antialiased
+}
+
+.spinner {
+    height: 64px;
+    width: 64px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-top: -32px;
+    margin-left: -32px
+}
+
+.not-found {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 4px;
+    -webkit-font-smoothing: antialiased
+}
+
+.loading {
+    color: #222;
+    font-size: 18px;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased
+}
+
+#channel {
+    background-color: #151515;
+    min-height: 460px;
+}
+
+#video {
+    float: left;
+    width: 672px;
+    height: 378px;
+    border-top: 1px solid #252525;
+    border-left: 1px solid #252525;
+    border-right: 1px solid #252525;
+    background-color: #151515
+}
+
+#video iframe {
+    width: 100%;
+    height: 100%
+}
+
+#video img {
+    width: 100%;
+    height: 100%
+}
+
+#video-expanded {
+    float: left;
+    width: 928px;
+    height: 522px;
+    border-top: 1px solid #252525;
+    border-left: 1px solid #252525;
+    border-right: 1px solid #252525;
+    background-color: #151515
+}
+
+#video-expanded iframe {
+    width: 100%;
+    height: 100%
+}
+
+#video-expanded img {
+    width: 100%;
+    height: 100%
+}
+
+#info-container-expanded {
+    float: left;
+    width: 928px;
+    height: 73px;
+    background-color: #151515;
+    border-right: 1px solid #252525;
+    border-top: 1px solid #252525
+}
+
+#info-container-expanded #channel-info {
+    float: left;
+    width: 100%;
+    height: 72px;
+    background-color: #151515;
+    border-left: 1px solid #252525;
+    border-bottom: 1px solid #252525;
+    padding: 4px;
+    overflow-y: hidden;
+    overflow-x: hidden
+}
+
+#info-container-expanded #channel-info .avatar {
+    float: left;
+    width: 64px;
+    height: 64px;
+    margin-right: 4px
+}
+
+#info-container-expanded #channel-info .avatar img {
+    display: block;
+    width: 64px;
+    height: 64px;
+    border: 1px solid #252525
+}
+
+#info-container-expanded #channel-info .info {
+    height: 64px;
+    float: left;
+    width: 100%
+}
+
+#info-container-expanded #channel-info .info #channel-info {
+    float: left;
+    width: 700px;
+    height: 30px;
+    font-size: 22px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    border: none;
+    color: #8c8d8f
+}
+
+#info-container-expanded #channel-info .info #channel-info #subtitle {
+    font-weight: 400;
+    color: #8c8d8f
+}
+
+#info-container-expanded #channel-info .info #viewers-info {
+    float: right
+}
+
+#info-container-expanded #channel-info .info #viewers-info .channel-viewers-title {
+    float: right;
+    width: 85px;
+    padding: 0 0 0 20px;
+    font-size: 14px;
+    line-height: 30px;
+    color: #8c8d8f;
+    background-image: url("/assets/icons/viewers.png");
+    background-repeat: no-repeat;
+    background-position: left center
+}
+
+#info-container-expanded #channel-info .info #info-bottom {
+    float: left;
+    width: 100%;
+    margin-top: 5px
+}
+
+#info-container-expanded #channel-info .info a {
+    color: #fff
+}
+
+#info-container-expanded #channel-info .info a:hover {
+    color: #ccc;
+    text-decoration: none
+}
+
+#info-container-expanded #channel-info .info p {
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 8px 8px 4px 0;
+    -webkit-font-smoothing: antialiased
+}
+
+#info-container-expanded #channel-info .info .popover {
+    max-width: 400px
+}
+
+#info-container-expanded #channel-info .info iframe {
+    visibility: hidden;
+    float: left;
+    width: 92px;
+    height: 36px;
+    padding: 0px;
+    margin: 0px
+}
+
+#info-container-expanded #channel-info .info .btn {
+    float: left;
+    width: 92px;
+    height: 30px;
+    font-size: 14px;
+    color: #fff;
+    border-color: #333;
+    font-weight: bold;
+    background-color: #ddd;
+    background: -webkit-gradient(linear, left top, left bottom, from(#666), to(#333));
+    background: -webkit-linear-gradient(top, #666, #333);
+    background: -moz-linear-gradient(top, #666, #333);
+    background: linear-gradient(to bottom, #666666, #333333);
+    margin-right: 4px;
+    padding: 5px;
+    outline: none
+}
+
+#info-container-expanded #channel-info .info .btn:hover {
+    color: #ccc
+}
+
+#info-container-expanded #channel-info .info .btn .glyphicon {
+    font-size: 14px
+}
+
+#info-container-expanded #channel-info .info .btn .glyphicon-check {
+    color: lime
+}
+
+#info-container-expanded #channel-info .info .share_button {
+    float: left
+}
+
+#info-container-expanded #channel-info .info #share_text {
+    width: 50px;
+    padding-top: 7px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #8c8d8f
+}
+
+#info-container-expanded #channel-info .info #twitter_share {
+    width: 30px;
+    height: 30px;
+    background-image: url("/assets/icons/sharing/twitter.png");
+    background-repeat: no-repeat
+}
+
+#info-container-expanded #channel-info .info #twitter_share:hover {
+    background-image: url("/assets/icons/sharing/twitterHover.png")
+}
+
+#info-container-expanded #channel-info .info #facebook_share {
+    width: 30px;
+    height: 30px;
+    background-image: url("/assets/icons/sharing/facebook.png");
+    background-repeat: no-repeat
+}
+
+#info-container-expanded #channel-info .info #facebook_share:hover {
+    background-image: url("/assets/icons/sharing/facebookHover.png")
+}
+
+#info-container-expanded #channel-info .info #gplus_share {
+    width: 30px;
+    height: 30px;
+    background-image: url("/assets/icons/sharing/googlePlus.png");
+    background-repeat: no-repeat
+}
+
+#info-container-expanded #channel-info .info #gplus_share:hover {
+    background-image: url("/assets/icons/sharing/googlePlusHover.png")
+}
+
+#info-container-expanded #channel-info .info #embed_share {
+    width: 30px;
+    height: 30px;
+    outline: 0;
+    background-image: url("/assets/icons/sharing/embed.png");
+    background-repeat: no-repeat
+}
+
+#info-container-expanded #channel-info .info #embed_share:hover {
+    background-image: url("/assets/icons/sharing/embedHover.png")
+}
+
+#info-container-expanded #channel-info .info #viewer-count {
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 0
+}
+
+#info-container-expanded #ad-info {
+    float: right;
+    min-width: 308px;
+    height: 73px
+}
+
+#info-container-expanded #ad-info .advertisement.video.banner {
+    width: 300px;
+    height: 60px;
+    margin: 6px 4px
+}
+
+#info-container {
+    float: left;
+    width: 672px;
+    height: 73px;
+    background-color: #151515;
+    border-right: 1px solid #252525;
+    border-top: 1px solid #252525
+}
+
+#info-container #channel-info {
+    float: left;
+    width: 100%;
+    height: 72px;
+    background-color: #151515;
+    border-left: 1px solid #252525;
+    border-bottom: 1px solid #252525;
+    padding: 4px;
+    overflow-y: hidden;
+    overflow-x: hidden
+}
+
+#info-container #channel-info .avatar {
+    float: left;
+    width: 64px;
+    height: 64px;
+    margin-right: 4px
+}
+
+#info-container #channel-info .avatar img {
+    display: block;
+    width: 64px;
+    height: 64px;
+    border: 1px solid #252525
+}
+
+#info-container #channel-info .info {
+    height: 64px;
+    float: left;
+    width: 100%
+}
+
+#info-container #channel-info .info #channel-info {
+    float: left;
+    width: 500px;
+    height: 30px;
+    font-size: 22px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    border: none;
+    color: #8c8d8f
+}
+
+#info-container #channel-info .info #channel-info #subtitle {
+    font-weight: 400;
+    color: #8c8d8f
+}
+
+#info-container #channel-info .info #viewers-info {
+    float: right
+}
+
+#info-container #channel-info .info #viewers-info .channel-viewers-title {
+    float: right;
+    width: 85px;
+    padding: 0 0 0 20px;
+    font-size: 14px;
+    line-height: 30px;
+    color: #8c8d8f;
+    background-image: url("/assets/icons/viewers.png");
+    background-repeat: no-repeat;
+    background-position: left center
+}
+
+#info-container #channel-info .info #info-bottom {
+    float: left;
+    width: 100%;
+    margin-top: 5px
+}
+
+#info-container #channel-info .info a {
+    color: #fff
+}
+
+#info-container #channel-info .info a:hover {
+    color: #ccc;
+    text-decoration: none
+}
+
+#info-container #channel-info .info p {
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 8px 8px 4px 0;
+    -webkit-font-smoothing: antialiased
+}
+
+#info-container #channel-info .info .popover {
+    max-width: 400px
+}
+
+#info-container #channel-info .info iframe {
+    visibility: hidden;
+    float: left;
+    width: 92px;
+    height: 36px;
+    padding: 0px;
+    margin: 0px
+}
+
+#info-container #channel-info .info .btn {
+    float: left;
+    width: 92px;
+    height: 30px;
+    font-size: 14px;
+    color: #fff;
+    border-color: #333;
+    font-weight: bold;
+    background-color: #ddd;
+    background: -webkit-gradient(linear, left top, left bottom, from(#666), to(#333));
+    background: -webkit-linear-gradient(top, #666, #333);
+    background: -moz-linear-gradient(top, #666, #333);
+    background: linear-gradient(to bottom, #666666, #333333);
+    margin-right: 4px;
+    padding: 5px;
+    outline: none
+}
+
+#info-container #channel-info .info .btn:hover {
+    color: #ccc
+}
+
+#info-container #channel-info .info .btn .glyphicon {
+    font-size: 14px
+}
+
+#info-container #channel-info .info .btn .glyphicon-check {
+    color: lime
+}
+
+#info-container #channel-info .info .share_button {
+    float: left
+}
+
+#info-container #channel-info .info #share_text {
+    width: 50px;
+    padding-top: 7px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #8c8d8f
+}
+
+#info-container #channel-info .info #twitter_share {
+    width: 30px;
+    height: 30px;
+    background-image: url("/assets/icons/sharing/twitter.png");
+    background-repeat: no-repeat
+}
+
+#info-container #channel-info .info #twitter_share:hover {
+    background-image: url("/assets/icons/sharing/twitterHover.png")
+}
+
+#info-container #channel-info .info #facebook_share {
+    width: 30px;
+    height: 30px;
+    background-image: url("/assets/icons/sharing/facebook.png");
+    background-repeat: no-repeat
+}
+
+#info-container #channel-info .info #facebook_share:hover {
+    background-image: url("/assets/icons/sharing/facebookHover.png")
+}
+
+#info-container #channel-info .info #gplus_share {
+    width: 30px;
+    height: 30px;
+    background-image: url("/assets/icons/sharing/googlePlus.png");
+    background-repeat: no-repeat
+}
+
+#info-container #channel-info .info #gplus_share:hover {
+    background-image: url("/assets/icons/sharing/googlePlusHover.png")
+}
+
+#info-container #channel-info .info #embed_share {
+    width: 30px;
+    height: 30px;
+    background-image: url("/assets/icons/sharing/embed.png");
+    background-repeat: no-repeat
+}
+
+#info-container #channel-info .info #embed_share:hover {
+    background-image: url("/assets/icons/sharing/embedHover.png")
+}
+
+#info-container #channel-info .info #viewer-count {
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 0
+}
+
+#info-container #ad-info {
+    float: right;
+    min-width: 308px;
+    height: 73px
+}
+
+#info-container #ad-info .advertisement.video.banner {
+    width: 300px;
+    height: 60px;
+    margin: 6px 4px
+}
+
+#video-sidebar-expanded {
+    float: right;
+    width: 72px;
+    height: 597px;
+    border: 1px solid #252525;
+    border-left: 0px;
+    background-color: #151515;
+    overflow: hidden
+}
+
+#video-sidebar-expanded #sidebar-nav .btn-group {
+    width: 100%;
+    height: 35px;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden
+}
+
+#video-sidebar-expanded #sidebar-nav .btn-group button.btn-default {
+    width: 42%;
+    height: 100%;
+    border-radius: 0px;
+    border-left: 0px;
+    border: 0px;
+    border-bottom: 1px solid #252525;
+    margin: 0px;
+    color: #fff;
+    font-weight: bold;
+    background: #151515;
+    box-shadow: none;
+    text-shadow: none
+}
+
+#video-sidebar-expanded #sidebar-nav .btn-group button.btn-default.expand {
+    width: 72px
+}
+
+#video-sidebar-expanded #sidebar-nav .btn-group button.btn-default:hover {
+    background-color: #333
+}
+
+#video-sidebar-expanded #sidebar-nav .btn-group button.btn-default.first.active {
+    border-right: 1px solid #252525;
+    background-color: #333
+}
+
+#video-sidebar-expanded #sidebar-nav .btn-group button.btn-default.last.active {
+    border-left: 1px solid #252525;
+    background-color: #333
+}
+
+#video-sidebar-expanded #sidebar-nav .btn-group button.btn-default#expand-button {
+    border-right: 1px solid #252525;
+    width: 72px
+}
+
+#video-sidebar-expanded #sidebar-nav .btn-group span.glyphicon-resize-full {
+    transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -ms-transform: scaleX(-1)
+}
+
+#video-sidebar-expanded #sidebar-nav .btn-group span.glyphicon-resize-small {
+    transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -ms-transform: scaleX(-1)
+}
+
+#video-sidebar-expanded #sidebar-content-expanded {
+    width: 328px;
+    height: 562px
+}
+
+#video-sidebar-expanded #sidebar-content-expanded #channels {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    color: gray
+}
+
+#video-sidebar-expanded #sidebar-content-expanded #channels .active {
+    background-color: #222;
+    color: #fff
+}
+
+#video-sidebar-expanded #sidebar-content-expanded #channels #related_channels_header {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid #252525;
+    padding: 4px
+}
+
+#video-sidebar-expanded #sidebar-content-expanded .channel {
+    color: #bbb;
+    padding: 8px;
+    border-bottom: 1px solid #252525;
+    overflow: hidden;
+    height: 64px;
+    opacity: 0.8
+}
+
+#video-sidebar-expanded #sidebar-content-expanded .channel p {
+    margin: 0px;
+    padding: 0px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+#video-sidebar-expanded #sidebar-content-expanded .channel:hover {
+    cursor: pointer;
+    background-color: #222
+}
+
+#video-sidebar-expanded #sidebar-content-expanded .channel .avatar {
+    float: left;
+    width: 48px;
+    height: 48px
+}
+
+#video-sidebar-expanded #sidebar-content-expanded .channel .avatar img {
+    display: block;
+    width: 48px;
+    height: 48px;
+    border: 1px solid #252525
+}
+
+#video-sidebar-expanded #sidebar-content-expanded .channel .info {
+    float: left;
+    width: 223px;
+    font-size: 15px;
+    line-height: 18px;
+    padding: 8px 0px 8px 8px
+}
+
+#video-sidebar-expanded #sidebar-content-expanded .channel .info .title {
+    font-weight: bold
+}
+
+#video-sidebar-expanded #sidebar-content-expanded .channel .info .subtitle {
+    color: gray;
+    overflow-x: hidden
+}
+
+#video-sidebar-expanded #sidebar-content-expanded .channel .status {
+    float: right;
+    width: 24px;
+    height: 24px;
+    margin-top: 14px;
+    background-repeat: no-repeat
+}
+
+#video-sidebar-expanded #sidebar-content-expanded .channel .live {
+    background-image: url("//assets1-www.majorleaguegaming.com/assets/icons/live-5c9914c8f821c638b665bc4b9b116211.png")
+}
+
+#video-sidebar-expanded #sidebar-content-expanded .channel .replay {
+    background-image: url("//assets2-www.majorleaguegaming.com/assets/icons/replay-0ac3bb2310eee1df182ba50cf2f01ab2.png")
+}
+
+#video-sidebar-expanded #sidebar-content-expanded .channel .offline {
+    background-image: url("//assets1-www.majorleaguegaming.com/assets/icons/offline-d0cff1c1ecc7c134c8fe37ec70a33098.png")
+}
+
+#video-sidebar-expanded #chat {
+    display: none;
+    width: 100%;
+    height: 100%
+}
+
+#video-sidebar-expanded #chat iframe {
+    width: 100%;
+    height: 100%
+}
+
+#video-sidebar {
+    float: right;
+    width: 328px;
+    height: 451px;
+    border: 1px solid #252525;
+    border-left: 0px;
+    background-color: #151515;
+    overflow: hidden
+}
+
+#video-sidebar #sidebar-nav .btn-group {
+    width: 100%;
+    height: 35px;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden
+}
+
+#video-sidebar #sidebar-nav .btn-group button.btn-default {
+    width: 42%;
+    height: 100%;
+    border-radius: 0px;
+    border-left: 0px;
+    border: 0px;
+    border-bottom: 1px solid #252525;
+    margin: 0px;
+    color: #fff;
+    font-weight: bold;
+    background: #151515;
+    box-shadow: none;
+    text-shadow: none
+}
+
+#video-sidebar #sidebar-nav .btn-group button.btn-default.expand {
+    width: 16%
+}
+
+#video-sidebar #sidebar-nav .btn-group button.btn-default:hover {
+    background-color: #333
+}
+
+#video-sidebar #sidebar-nav .btn-group button.btn-default.first.active {
+    border-right: 1px solid #252525;
+    background-color: #333
+}
+
+#video-sidebar #sidebar-nav .btn-group button.btn-default.last.active {
+    border-left: 1px solid #252525;
+    background-color: #333
+}
+
+#video-sidebar #sidebar-nav .btn-group button.btn-default#expand-button {
+    border-right: 1px solid #252525
+}
+
+#video-sidebar #sidebar-nav .btn-group span.glyphicon-resize-full {
+    transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -ms-transform: scaleX(-1)
+}
+
+#video-sidebar #sidebar-nav .btn-group span.glyphicon-resize-small {
+    transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -ms-transform: scaleX(-1)
+}
+
+#video-sidebar #sidebar-content {
+    width: 328px;
+    height: 415px
+}
+
+#video-sidebar #sidebar-content #channels {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    color: gray
+}
+
+#video-sidebar #sidebar-content #channels .active {
+    background-color: #222;
+    color: #fff
+}
+
+#video-sidebar #sidebar-content #channels #related_channels_header {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid #252525;
+    padding: 4px
+}
+
+#video-sidebar #sidebar-content .channel {
+    color: #bbb;
+    padding: 8px;
+    border-bottom: 1px solid #252525;
+    overflow: hidden;
+    height: 64px;
+    opacity: 0.8;
+    box-shadow: inset 0 0 0 0 #000;
+    width: 100%
+}
+
+#video-sidebar #sidebar-content .channel p {
+    margin: 0px;
+    padding: 0px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+#video-sidebar #sidebar-content .channel:hover {
+    cursor: pointer;
+    background-color: #222
+}
+
+#video-sidebar #sidebar-content .channel .avatar {
+    float: left;
+    width: 48px;
+    height: 48px
+}
+
+#video-sidebar #sidebar-content .channel .avatar img {
+    display: block;
+    width: 48px;
+    height: 48px;
+    border: 1px solid #252525
+}
+
+#video-sidebar #sidebar-content .channel .info {
+    float: left;
+    width: 223px;
+    font-size: 15px;
+    line-height: 18px;
+    padding: 8px 0px 8px 8px
+}
+
+#video-sidebar #sidebar-content .channel .info .title {
+    font-weight: bold
+}
+
+#video-sidebar #sidebar-content .channel .info .subtitle {
+    color: gray;
+    overflow-x: hidden
+}
+
+#video-sidebar #sidebar-content .channel .status {
+    float: right;
+    width: 24px;
+    height: 24px;
+    margin-top: 14px;
+    background-repeat: no-repeat
+}
+
+#video-sidebar #sidebar-content .channel .live {
+    background-image: url("//assets1-www.majorleaguegaming.com/assets/icons/live-5c9914c8f821c638b665bc4b9b116211.png")
+}
+
+#video-sidebar #sidebar-content .channel .replay {
+    background-image: url("//assets2-www.majorleaguegaming.com/assets/icons/replay-0ac3bb2310eee1df182ba50cf2f01ab2.png")
+}
+
+#video-sidebar #sidebar-content .channel .offline {
+    background-image: url("//assets1-www.majorleaguegaming.com/assets/icons/offline-d0cff1c1ecc7c134c8fe37ec70a33098.png")
+}
+
+#video-sidebar #chat {
+    display: none;
+    width: 100%;
+    height: 100%
+}
+
+#video-sidebar #chat iframe {
+    width: 100%;
+    height: 100%
+}
+
+#product_list {
+    width: 100%
+}
+
+#product-widget-table {
+    width: 100%;
+    margin-bottom: 10px
+}
+
+#product-widget-table .product-widget-table-image {
+    padding: 5px
+}
+
+#product-widget-table .product-image {
+    max-width: 100px
+}
+
+.donate-link {
+    color: #017dde;
+    text-decoration: none;
+    display: block
+}
+
+.donate-link:hover {
+    text-decoration: none
+}
+
+.donate {
+    margin: 40px 0 60px 0;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding: 16px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    background: #fff;
+    background: -moz-linear-gradient(top, #fff 1%, #ececec 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #fff), color-stop(100%, #ececec));
+    background: -webkit-linear-gradient(top, #fff 1%, #ececec 100%);
+    background: -o-linear-gradient(top, #fff 1%, #ececec 100%);
+    background: -ms-linear-gradient(top, #fff 1%, #ececec 100%);
+    background: linear-gradient(to bottom, #ffffff 1%, #ececec 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ececec', GradientType=0)
+}
+
+.donate:hover {
+    text-decoration: none;
+    -webkit-animation-name: pulse;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    cursor: pointer
+}
+
+@-webkit-keyframes pulse {
+    from {
+        -webkit-box-shadow: 0 0 9px #fff;
+        border: 1px solid #aaa
+    }
+    50% {
+        -webkit-box-shadow: 0 0 18px #017dde;
+        border: 1px solid #017dde
+    }
+    to {
+        -webkit-box-shadow: 0 0 9px #fff;
+        border: 1px solid #aaa
+    }
+}
+
+.standings_teams {
+    width: 100%;
+    margin-top: 10px
+}
+
+.standings_teams #standings {
+    margin-left: 5px
+}
+
+.standings_teams .section .title {
+    font-weight: bold
+}
+
+.standings_teams table td {
+    padding: 15px 15px 0 0
+}
+
+.standings_teams .team {
+    font-weight: bold
+}
+
+.standings_teams .wins, .standings_teams .losses {
+    text-align: center
+}
+
+.standings_teams .team-head {
+    width: 175px
+}
+
+.standings_teams .wins-head {
+    width: 60px
+}
+
+.standings_teams .losses-head {
+    width: 60px;
+    padding-right: 0
+}
+
+.standings_teams th {
+    font-weight: bold;
+    padding: 15px 15px 5px 0;
+    border-bottom: 1px solid #dadada;
+    font-size: 16px
+}
+
+.standings_teams #expand {
+    margin-top: 15px;
+    width: 100%;
+    text-align: center
+}
+
+.standings_teams #see_more {
+    padding: 5px;
+    border: 1px solid #dadada;
+    text-align: center
+}
+.container{
+    width: 1010px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background: none;
+    margin: auto;
+}
