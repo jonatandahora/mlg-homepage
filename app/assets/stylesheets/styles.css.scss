@@ -236,9 +236,10 @@ body {
 }
 
 .tittle{
-    width: 1000px;
-    margin: 25px auto;
+  margin: 25px 2px;
+  width: 653px;
 }
+
 .line{
     box-sizing: border-box;
     background: none repeat scroll 0 0 #dadada;
@@ -247,8 +248,8 @@ body {
     top: 12px;
 }
 .channel_span{
-     font-family: "quicksandbold", Helvetica, Arial, sans-serif;
-    font-size: 15px;
+  font-family: "quicksandbold", Helvetica, Arial, sans-serif;
+  font-size: 15px;
   background-color: #edf1f0;
   color: #222;
   font-size: 18px;
@@ -284,8 +285,7 @@ body {
 .ad_right{
     width: 300px;
     height: 250px;
-    background-color: black;
-    
+    background-color: #000000;
 }
 .channel-image{
   width: 320px;
@@ -342,4 +342,7 @@ body {
   width: 100%;
   height: 58px;
   overflow: hidden;
+}
+#box-plugin{
+  padding: 35px 0 10px 0;
 }
