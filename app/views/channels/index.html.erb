@@ -9,11 +9,11 @@
     <div class="channels">
     <%= image_tag(channel['image_16_9_medium'],class: 'channel-image') %>
       <% if channel['status'] == 'offline' %>
-          <div class="wrapper offline">OFFLINE</div>
+          <div class="wrapper wrapper-offline">OFFLINE</div>
       <% elsif channel['status'] == 'replay' %>
-          <div class="wrapper replay">REPLAY</div>
+          <div class="wrapper wrapper-replay">REPLAY</div>
       <% else %>
-          <div class="wrapper live">LIVE</div>
+          <div class="wrapper wrapper-live">LIVE</div>
       <% end %>
       <div class="hover-box">
         <h2><%= channel['name']%></h2>
