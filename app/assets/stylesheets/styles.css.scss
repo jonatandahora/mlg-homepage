@@ -279,13 +279,13 @@ body {
 }
 .content_rigth{
     width: 310px;
-    height: 590px;
+    height: 720px;
     float: right;
 }
 .ad_right{
     width: 300px;
     height: 250px;
-    background-color: #000000;
+
 }
 .channel-image{
   width: 320px;
@@ -334,6 +334,15 @@ body {
   transition: top 0.3s ease-in-out;
   overflow: hidden;
   font-size: 12px;
+  line-height: 15px;
+  font-family: "quicksandregular", Helvetica, Arial, sans-serif;
+
+}
+.hover-box h2{
+  font-size: 12px;
+  line-height: 18px;
+  font-family: "quicksandbold", Helvetica, Arial, sans-serif;
+
 }
 .channels:hover .hover-box {
   top: 96px;
