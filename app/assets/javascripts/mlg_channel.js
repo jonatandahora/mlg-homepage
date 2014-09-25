@@ -92,7 +92,7 @@ var MlgChannel = function (a, b, c) {
         })), $("#play_placeholder").click(function () {
             $("#video, #video-expanded").html(f), $("#video, #video-expanded").css({"background-image": "none", "background-color": "#151515"})
         });
-        var g = "//" + document.domain + "/follows/follow_button?channel_id=" + b.id, h = "";
+        var g = "//www.majorleaguegaming.com/follows/follow_button?channel_id=" + b.id, h = "";
         b.viewers >= d.min_concurrents && b["status"] == 1 && (h = "        <span title='" + b.viewers.toLocaleString() + " viewers'>          <span id='viewer-count'>" + b.viewers.toLocaleString() + "</span>        </span>      ");
         var i = "";
         b["embed_code"] == null ? i = "" : i = b.embed_code.replace("/player/", "http://www.majorleaguegaming.com/player/");
@@ -125,7 +125,7 @@ var MlgChannel = function (a, b, c) {
     }, d.changeBackground = function (a) {
         $("#dark-bg-thing").css("background-image", "url(" + a + ")")
     }, d.noChannelsFound = function () {
-        $("#video").html(""), $("#channels").html("<p class='not-found'>No channels found</p>"), $("#channel-info").html("<div class='info'><p>Offline</p></div>"), $("#chat").html("<p class='not-found'>No chat found</p>")
+        $("#video").html(""), $("#channels").html("<p class='not-found'>Nenhum canal encontrado</p>"), $("#channel-info").html("<div class='info'><p>Offline</p></div>"), $("#chat").html("<p class='not-found'>No chat found</p>")
     }, d.getIndexFromFirstLiveChannel = function () {
         for (var a = 0; a < d.MLG_API_CLIENT.channels.length; a++) {
             var b = d.MLG_API_CLIENT.channels[a];

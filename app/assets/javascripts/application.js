@@ -19,4 +19,5 @@
 //= require mlg_model
 //= require mlg_view
 //= require swfobject
+//= require bootstrap_min
 //= require_tree .
