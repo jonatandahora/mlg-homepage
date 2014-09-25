@@ -3,35 +3,25 @@
   <div class="line"></div>
   <span class="channel_span">Canais</span>
 </div>
-<div class="content_left">
-  <% @channels.each { |channel| %>
-  <a href="<%= channel['url'] %>">
-    <div class="channels">
-    <%= image_tag(channel['image_16_9_medium'],class: 'channel-image') %>
-      <% if channel['status'] == 'offline' %>
-          <div class="wrapper wrapper-offline">OFFLINE</div>
-      <% elsif channel['status'] == 'replay' %>
-          <div class="wrapper wrapper-replay">REPLAY</div>
-      <% else %>
-          <div class="wrapper wrapper-live">LIVE</div>
-      <% end %>
-      <div class="hover-box">
-        <h2><%= channel['name']%></h2>
-        <div class="description">
+<% @channels.each { |channel| %>
+    <a href="<%= channel['url'] %>">
+      <div class="channels">
+        <%= image_tag(channel['image_16_9_medium'],class: 'channel-image') %>
+        <% if channel['status'] == 'offline' %>
+            <div class="wrapper wrapper-offline">OFFLINE</div>
+        <% elsif channel['status'] == 'replay' %>
+            <div class="wrapper wrapper-replay">REPLAY</div>
+        <% else %>
+            <div class="wrapper wrapper-live">LIVE</div>
+        <% end %>
+        <div class="hover-box">
+          <h2><%= channel['name']%></h2>
+          <div class="description">
             <div style="margin: 0px; padding: 0px; border: 0px;">
-                <%= channel['description'] %>
+              <%= channel['description'] %>
             </div>
+          </div>
         </div>
       </div>
-    </div>
-  </a>
-  <% } %>
-  </div>
-<div class="content_rigth">
-  <div id="box-plugin">
-    <a class="twitter-timeline" href="https://twitter.com/MLG_Brasil" width="300" height="396" data-widget-id="470934460083355649">Tweets de @MLG_Brasil</a>
-  </div>
-  <div class="ad_right"></div>
-
-</div>
-</div>
+    </a>
+<% } %>

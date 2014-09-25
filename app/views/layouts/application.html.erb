@@ -107,7 +107,12 @@
 </div>
 
 <div class="content_box">
-  <%= yield %>
+  <div class="content_left">
+    <%= yield %>
+  </div>
+  <div class="content_rigth">
+    <%= render :partial => 'layouts/content_right' %>
+  </div>
 </div>
 <div class="footer_bg">
   <div class="footer_box">
