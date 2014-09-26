@@ -12,7 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
 //= require widgets
 //= require mlg_api_client
 //= require mlg_channel
