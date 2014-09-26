@@ -252,10 +252,11 @@ body {
   font-size: 15px;
   background-color: #edf1f0;
   color: #222;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
   padding-right: 16px;
   position: relative;
+  text-transform: uppercase;
 }
 .content_box{
     width: 1000px;
@@ -264,7 +265,7 @@ body {
 }
 .content_left{
     width: 690px;
-    height: 300px;
+    height: 500px;
     float: left;
 }
 .channels{
@@ -354,4 +355,8 @@ body {
 }
 #box-plugin{
   padding: 35px 0 10px 0;
+}
+.container_bg{
+  width: 100%;
+  background: url(image_path('bg_player.jpg')) repeat-x scroll center top #000000;
 }

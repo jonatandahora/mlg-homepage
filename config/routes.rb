@@ -1,7 +1,10 @@
 Homepage::Application.routes.draw do
-
+  get "mlg_brasil_na_midia/index"
+  get "nosso_time/index"
   get "quem_somos/index"
   get "channels/index"
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -17,6 +20,9 @@ Homepage::Application.routes.draw do
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
   resources :quem_somos
+
+  resources :nosso_time
+  resources :mlg_brasil_na_midia
   # Example resource route with options:
   #   resources :products do
   #     member do
