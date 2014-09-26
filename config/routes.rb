@@ -1,4 +1,5 @@
 Homepage::Application.routes.draw do
+  get "contato/index"
   get "mlg_brasil_na_midia/index"
   get "nosso_time/index"
   get "quem_somos/index"
@@ -19,10 +20,12 @@ Homepage::Application.routes.draw do
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
+  resources :contato
+  resources :mlg_brasil_na_midia
+  resources :nosso_time
   resources :quem_somos
 
-  resources :nosso_time
-  resources :mlg_brasil_na_midia
+
   # Example resource route with options:
   #   resources :products do
   #     member do
