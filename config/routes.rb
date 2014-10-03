@@ -1,5 +1,10 @@
 Homepage::Application.routes.draw do
-  get "contato/index"
+
+  resources :contacts
+
+  match '/contato',     to: 'contacts#new',             via: 'get'
+  match '/contato',     to: 'contacts#create',             via: 'post'
+  resources "contato", only: [:new, :create]
   get "mlg_brasil_na_midia/index"
   get "nosso_time/index"
   get "quem_somos/index"
@@ -20,7 +25,6 @@ Homepage::Application.routes.draw do
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
-  resources :contato
   resources :mlg_brasil_na_midia
   resources :nosso_time
   resources :quem_somos

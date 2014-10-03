@@ -49,3 +49,7 @@ gem 'httparty'
 gem 'rest-client'
 gem 'unicorn'
 #gem 'jquery-turbolinks'
+
+gem 'devise'
+gem 'mail_form'
+gem 'simple_form'

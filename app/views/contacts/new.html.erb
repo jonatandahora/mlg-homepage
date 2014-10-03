@@ -1,0 +1,17 @@
+<div class="tittle">
+  <div class="line"></div>
+  <span class="channel_span">Contate-nos</span>
+</div>
+
+  <%= simple_form_for @contact, :html => {:class => 'form-horizontal col-lg-6' },:defaults => { :wrapper_html => {:class => 'form-group'}, :input_html => { :class => 'form-control' } } do |f| %>
+      <%= f.input :name, :required => true, :label=> 'Nome' %>
+      <%= f.input :email, :required => true, :label=>'Email' %>
+      <%= f.input :message, :as => :text, :required => true, :label=> 'Mensagem' %>
+      <div class= "hidden">
+        <%= f.input :nickname, :hint => 'Deixe este campo em branco' %>
+      </div>
+      <div>
+        </br>
+        <%= f.button :submit, 'Enviar Mensagem', :class=> "btn btn-primary" %>
+      </div>
+  <% end %>
