@@ -3,6 +3,7 @@ var MlgChannel = function (a, b, c) {
     var d = this;
     d.autoplay = function () {
         //return window.location.hostname.match(/^.*?-?(\w*)\./)[1] == "www" ? !1 : !0
+        return !0
     }, this.MLG_API_CLIENT = new MlgApiClient(a, b, "mlgChannel"), this.REFRESH_FINISHED = "refresh_finished", this.REFRESH_FAILED = "refresh_failed", this.current_channel_index = -1, this.channel_id = c, this.autoplay = d.autoplay(), this.parent_has_live_stream = !1, this.video_expanded = $("#page_type").val() == "tv" ? !0 : !1, this.sample_percent = 5, this.sample = 100 / this.sample_percent, this.expand_count = 0, this.min_concurrents = 100, this.page_type = $("#page_type").val(), d.on = function (a, b) {
         var c = this;
         a in c.MLG_API_CLIENT.event_listeners || (c.MLG_API_CLIENT.event_listeners[a] = []), c.MLG_API_CLIENT.event_listeners[a].push(b)
