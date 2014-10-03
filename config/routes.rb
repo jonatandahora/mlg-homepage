@@ -1,8 +1,10 @@
 Homepage::Application.routes.draw do
 
+  resources :contacts
+
   match '/contato',     to: 'contacts#new',             via: 'get'
   match '/contato',     to: 'contacts#create',             via: 'post'
-  resources "contacts", only: [:new, :create]
+  resources "contato", only: [:new, :create]
   get "mlg_brasil_na_midia/index"
   get "nosso_time/index"
   get "quem_somos/index"
