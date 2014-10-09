@@ -69,9 +69,9 @@
   </script>
 </head>
 <body>
-<div id="mlg-header" class="mlg-header-bg">
+<div id="mlg-header" class="mlg-header-bg row">
 </div>
-<div class="container_bg">
+<div class="container_bg row">
 <div style="margin: auto; width: 1000px; padding:10px 0 10px 136px; background-color: #000000">
   <script type="text/javascript">
       bb_bid = "1698203";
@@ -132,7 +132,7 @@
 </div>
 
 </div>
-
+<div class="row content_bg">
 <div class="content_box">
   <div class="content_left">
     <%= yield %>
@@ -140,9 +140,9 @@
   <div class="content_right">
     <%= render :partial => 'layouts/content_right' %>
   </div>
-
 </div>
-<div id="ft">
+</div>
+<div id="ft" class="row">
 </div>
 <link href="http://s3-sa-east-1.amazonaws.com/mlg-assets/footer/footer_js.css" media="screen" rel="stylesheet" type="text/css">
 <script src="http://s3-sa-east-1.amazonaws.com/mlg-assets/footer/footer_js.js" type="text/javascript"></script>

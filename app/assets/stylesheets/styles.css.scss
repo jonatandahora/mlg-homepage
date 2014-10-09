@@ -259,12 +259,12 @@ body {
 }
 .content_box{
     width: 1000px;
-    height: 760px;
+//    height: 760px;
     margin: auto;
 }
 .content_left{
     width: 690px;
-    height: 500px;
+//    height: 500px;
     float: left;
 }
 .channels{
@@ -277,16 +277,11 @@ body {
   display: inline-block;
   position: relative;
 }
-.content_rigth{
-    width: 300px;
-    height: 720px;
-    float: right;
-}
+
 .content_right{
-  width: 300px;
-  height: 720px;
-  float: right;
-}
+   width: 300px;
+   float: right;
+ }
 .ad_right{
     width: 300px;
     height: 250px;
@@ -360,10 +355,7 @@ body {
 #box-plugin{
   padding: 35px 0 10px 0;
 }
-.container_bg{
-  width: 100%;
-  background: url(image_path('bg_player.jpg')) repeat-x scroll center top #000000;
-}
+
 .line1{
   height: 180px;
 }
@@ -420,3 +412,10 @@ body {
   text-align: left;
 }
 .hidden{ display: none}
+.row{
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.content_bg{
+  padding-bottom: 50px;
+}
