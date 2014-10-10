@@ -1,0 +1,2 @@
+module MlgNaMidiaHelper
+end

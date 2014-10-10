@@ -1,5 +1,6 @@
 Homepage::Application.routes.draw do
 
+
   resources :contacts
 
   match '/contato',     to: 'contacts#new',             via: 'get'
@@ -28,7 +29,7 @@ Homepage::Application.routes.draw do
   resources :mlg_brasil_na_midia
   resources :nosso_time
   resources :quem_somos
-
+  resources :mlg_na_midia
 
   # Example resource route with options:
   #   resources :products do
