@@ -1,11 +1,3 @@
-var embed_whitelist = ["mlbrasil.tv","majorleaguegaming.com","fwiz.tv","opticgaming.tv","websitetestlink.com","nobleesports.com"];
-if (document.referrer) {
-    var tld = $.getTLD(document.referrer);
-    if (embed_whitelist.indexOf(tld) == -1) {
-        window.location.replace("error/403");
-    }
-}
-
 var MlgChannel = function (a, b, c) {
     c = c || null;
     var d = this;
