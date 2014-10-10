@@ -101,9 +101,9 @@ var MlgChannel = function (a, b, c) {
         $("#channel-info").html(k), $("#embed_share").popover();
         var l = "";
         if (b["new_chat"] == 1) {
-            var m = document.domain.split("."), n = m[0], o = m.slice(1).join(".");
-            l = "http://chat." + o + "/" + b.id
-        } else l = "//" + document.domain + "/chat/" + b.id;
+            //var m = document.domain.split("."), n = m[0], o = m.slice(1).join(".");
+            l = "http://chat.majorleaguegaming.com/" + b.id
+        } else l = "//majorleaguegaming.com/chat/" + b.id;
         var p = "<iframe id='mlg_chat_iframe' frameborder='0' scrolling='no' src='" + l + "'></iframe>";
         $("#chat").html(p);
         if (c) {
