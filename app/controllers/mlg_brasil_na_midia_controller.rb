@@ -1,5 +1,5 @@
 class MlgBrasilNaMidiaController < ApplicationController
-  layout 'mlg_na_midia'
+  layout 'without_video'
   def index
   end
 

@@ -3,13 +3,17 @@
   font-size: 13px;
   font-family: "quicksandregular", Helvetica, Arial, sans-serif;
   margin-right: 30px;
-  line-height: 30px;
+  line-height: 20px;
   display: block;
+  padding-bottom: 15px;
+  cursor: hand;
 }
 .contact_txt:hover{
   text-decoration: underline;
   background-color: transparent;
   color: green;
-
-
+}
+.txt_bold{
+  font-size: 13px;
+  font-family: "quicksandbold", Helvetica, Arial, sans-serif;
 }
