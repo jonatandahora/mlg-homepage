@@ -1,6 +1,6 @@
 #new_contact {
   background-color: #ccc;
-  margin: 30px 75px;
+  margin: 20px 75px;
   padding: 10px 25px;
   width: 500px;
 }
@@ -14,24 +14,22 @@
   background-color: #0e783e;
   margin: 13px auto 17px;
   padding: 16px 159px;
+  border: none;
 }
 .btn-primary:hover {
-  background-color: #019c12;
+  background-color: #01aa14;
+  border: none;
 }
 .form-control {
   font-family: "quicksandregular",Helvetica,Arial,sans-serif;
   font-size: 15px;
   padding: 0;
   width: 443px;
-  border: 2px inset threedface;
 }
-.txt_input {
+#txt_input {
   font-family: "quicksandregular",Helvetica,Arial,sans-serif;
   font-size: 15px;
   line-height: 18px;
-  border: 2px inset threedface !important;
-  resize: none;
-
 }
 .text{
   font-weight: normal !important;

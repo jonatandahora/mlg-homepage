@@ -1,0 +1,27 @@
+
+<div class="tittle">
+  <div class="line"></div>
+  <span class="channel_span">Canais</span>
+</div>
+<% @channels.each { |channel| %>
+    <a href="<%= channel['url'] %>">
+      <div class="channels">
+        <%= image_tag(channel['image_16_9_medium'],class: 'channel-image') %>
+        <% if channel['status'] == 'offline' %>
+            <div class="wrapper wrapper-offline">OFFLINE</div>
+        <% elsif channel['status'] == 'replay' %>
+            <div class="wrapper wrapper-replay">REPLAY</div>
+        <% else %>
+            <div class="wrapper wrapper-live">LIVE</div>
+        <% end %>
+        <div class="hover-box">
+          <h2><%= channel['name']%></h2>
+          <div class="description">
+            <div style="margin: 0px; padding: 0px; border: 0px;">
+              <%= channel['description'] %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+<% } %>

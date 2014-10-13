@@ -1,6 +1,7 @@
 Homepage::Application.routes.draw do
 
 
+  get "home/index"
   resources :contacts
 
   match '/contato',     to: 'contacts#new',             via: 'get'
@@ -16,7 +17,7 @@ Homepage::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-   root 'channels#index'
+   root 'home#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
@@ -30,6 +31,7 @@ Homepage::Application.routes.draw do
   resources :nosso_time
   resources :quem_somos
   resources :mlg_na_midia
+  resources :channels
 
   # Example resource route with options:
   #   resources :products do

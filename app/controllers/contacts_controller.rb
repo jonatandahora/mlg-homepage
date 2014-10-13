@@ -1,6 +1,7 @@
 # coding: UTF-8
 
 class ContactsController < ApplicationController
+  layout 'without_video'
   def new
     @contact = Contact.new
   end
