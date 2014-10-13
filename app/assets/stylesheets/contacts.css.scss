@@ -25,11 +25,12 @@
   width: 443px;
   border: 2px inset threedface;
 }
-#txt_input {
+.txt_input {
   font-family: "quicksandregular",Helvetica,Arial,sans-serif;
   font-size: 15px;
   line-height: 18px;
-  border: 2px inset threedface;
+  border: 2px inset threedface !important;
+  resize: none;
 
 }
 .text{
