@@ -26,10 +26,9 @@
   padding: 0;
   width: 443px;
 }
-#txt_input {
-  font-family: "quicksandregular",Helvetica,Arial,sans-serif;
-  font-size: 15px;
+.txt_input {
   line-height: 18px;
+  resize: none;
 }
 .text{
   font-weight: normal !important;
