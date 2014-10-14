@@ -1,10 +1,22 @@
 // Place all the styles related to the quem_somos controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.text{
+.text_p{
   color:#272727;
-  font-size: 15px;
-  font-family: "quicksandregular", Helvetica, Arial, sans-serif;
+  font: 14px/22px Arial,Helvetica,sans-serif;
   margin-right: 30px;
-  line-height: 30px;
+  padding-bottom: 20px;
+}
+.qs_titulo{
+  color:#272727;
+  font: 15px/35px Arial,Helvetica,sans-serif;
+  margin-right: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.qs_bullet{
+  color:#272727;
+  font: 14px/22px Arial,Helvetica,sans-serif;
+  display: block;
+  padding: 10px 0px 0px 30px;
 }
