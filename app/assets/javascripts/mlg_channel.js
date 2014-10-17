@@ -3,6 +3,7 @@ var MlgChannel = function (a, b, c) {
     var d = this;
     d.autoplay = function () {
         //return window.location.hostname.match(/^.*?-?(\w*)\./)[1] == "www" ? !1 : !0
+
         return !0
     }, this.MLG_API_CLIENT = new MlgApiClient(a, b, "mlgChannel"), this.REFRESH_FINISHED = "refresh_finished", this.REFRESH_FAILED = "refresh_failed", this.current_channel_index = -1, this.channel_id = c, this.autoplay = d.autoplay(), this.parent_has_live_stream = !1, this.video_expanded = $("#page_type").val() == "tv" ? !0 : !1, this.sample_percent = 5, this.sample = 100 / this.sample_percent, this.expand_count = 0, this.min_concurrents = 100, this.page_type = $("#page_type").val(), d.on = function (a, b) {
         var c = this;
@@ -106,7 +107,7 @@ var MlgChannel = function (a, b, c) {
         } else l = "//majorleaguegaming.com/chat/" + b.id;
         var p = "<iframe id='mlg_chat_iframe' frameborder='0' scrolling='no' src='" + l + "'></iframe>";
         $("#chat").html(p);
-        $("#tlkio > iframe").attr('src', '//embed.tlk.io/'+b["name"].replace(/ /g,''))
+        $("#tlkio > iframe").attr('src', '//embed.tlk.io/'+b["name"].replace(/ /g,''));
         if (c) {
             if (d.video_expanded == 1)return;
             if (e["type"] == "team" || e["type"] == "network")$("#channels-button").hasClass("active") || $("#channels-button").focus().click(); else switch (b.default_tab) {
@@ -115,8 +116,6 @@ var MlgChannel = function (a, b, c) {
                     break;
                 case"chat_tab":
                     $("#chat-button").hasClass("active") || $("#chat-button").focus().click();
-                    $("#tlkio").html("<div id='tlkio' data-channel="+b["name"].replace(/ /g,'')+" style='width:100%;height:400px;'></div>");
-                    $.getScript('http://tlk.io/embed.js');
                     break;
                 default:
             }
