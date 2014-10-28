@@ -84,7 +84,7 @@ Homepage::Application.configure do
   config.action_mailer.default :charset => "utf-8"
 
   config.action_mailer.smtp_settings = {
-      address: "smtp.mlgbrasil.tv",
+      address: "smtp.gmail.com",
       port: 587,
       domain: "mlgbrasil.tv",
       authentication: "plain",
