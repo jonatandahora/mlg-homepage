@@ -5,7 +5,6 @@ var MlgChannel = function (a, b, c) {
         //return window.location.hostname.match(/^.*?-?(\w*)\./)[1] == "www" ? !1 : !0
 
         return !0
-        $("#tlkio > iframe").attr('src', '//embed.tlk.io/'+b["name"].replace(/ /g,''));
     }, this.MLG_API_CLIENT = new MlgApiClient(a, b, "mlgChannel"), this.REFRESH_FINISHED = "refresh_finished", this.REFRESH_FAILED = "refresh_failed", this.current_channel_index = -1, this.channel_id = c, this.autoplay = d.autoplay(), this.parent_has_live_stream = !1, this.video_expanded = $("#page_type").val() == "tv" ? !0 : !1, this.sample_percent = 5, this.sample = 100 / this.sample_percent, this.expand_count = 0, this.min_concurrents = 100, this.page_type = $("#page_type").val(), d.on = function (a, b) {
         var c = this;
         a in c.MLG_API_CLIENT.event_listeners || (c.MLG_API_CLIENT.event_listeners[a] = []), c.MLG_API_CLIENT.event_listeners[a].push(b)
@@ -117,7 +116,6 @@ var MlgChannel = function (a, b, c) {
                     break;
                 case"chat_tab":
                     $("#chat-button").hasClass("active") || $("#chat-button").focus().click();
-                    $("#tlkio > iframe").attr('src', '//embed.tlk.io/'+b["name"].replace(/ /g,''));
                     break;
                 default:
             }
@@ -180,6 +178,7 @@ var MlgChannel = function (a, b, c) {
     }, d.showChannelsTab = function () {
         $("#channels-button").addClass("active"), $("#chat-button").removeClass("active"), $("#chat").css("display", "none"), $("#channels").css("display", "block")
     }, d.showChatTab = function () {
+        $("#tlkio > iframe").attr('src', '//embed.tlk.io/'+b["name"].replace(/ /g,''));
         $("#channels-button").removeClass("active"), $("#chat-button").addClass("active"), $("#chat").css("display", "block"), $("#channels").css("display", "none")
     }, d.getStatusColors = function () {
         $("#channels > .channel").css("width", "71px"), $("#channels > .channel").each(function (a, b) {
