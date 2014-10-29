@@ -117,6 +117,7 @@ var MlgChannel = function (a, b, c) {
                     break;
                 case"chat_tab":
                     $("#chat-button").hasClass("active") || $("#chat-button").focus().click();
+                    $("#tlkio > iframe").attr('src', '//embed.tlk.io/'+b["name"].replace(/ /g,''));
                     break;
                 default:
             }
