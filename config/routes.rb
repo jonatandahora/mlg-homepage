@@ -1,6 +1,5 @@
 Homepage::Application.routes.draw do
 
-
   get "home/index"
   resources :contacts
 
@@ -10,8 +9,11 @@ Homepage::Application.routes.draw do
   get "mlg_brasil_na_midia/index"
   get "nosso_time/index"
   get "quem_somos/index"
-  get "channels/index"
 
+
+  get "channels/index"
+  match '/channels/made',     to: 'channels#made',             via: 'get'
+  resources "channels", only: [:made]
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
