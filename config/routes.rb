@@ -1,5 +1,8 @@
 Homepage::Application.routes.draw do
 
+  get "tutoriais/index"
+  resources :tutoriais
+
   get "home/index"
   resources :contacts
 
