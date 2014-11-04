@@ -20,6 +20,9 @@ class ChannelsController < ApplicationController
     end
 
 def made
+
+  @canal = MlgMetadata.get_channels_by_tag('Made')
+
   @channels = MlgMetadata.get_channels_by_tag('MLG%20Brasil')
   @channels.each { |channel|
     stream_name = channel['stream_name']

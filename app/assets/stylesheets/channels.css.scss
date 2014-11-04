@@ -3,3 +3,35 @@
   background: url(image_path('bg_player.jpg')) repeat-x scroll center center #000000;
   min-width: 1000px;
 }
+
+.text_p{
+  color:#272727;
+  font: 14px/22px Arial,Helvetica,sans-serif;
+  margin-right: 30px;
+  padding-bottom: 20px;
+}
+.social_button_box{
+  height: 34px;
+}
+.social_button{
+  height: 34px;
+  width: 34px;
+  float: left;
+  margin-left: 10px;
+}
+.facebook{
+  background: url(image_path('bt_channel_face.png')) repeat-x scroll center center #000000;
+}
+.twitter{
+  background: url(image_path('bt_channel_twit.png')) repeat-x scroll center center #000000;
+}
+.instagram{
+  background: url(image_path('bt_channel_inst.png')) repeat-x scroll center center #000000;
+}
+.youtube{
+  background: url(image_path('bt_channel_yout.png')) repeat-x scroll center center #000000;
+}
+
+.ad{
+
+}
