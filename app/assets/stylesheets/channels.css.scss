@@ -17,21 +17,18 @@
   height: 34px;
   width: 34px;
   float: left;
-  margin-left: 10px;
+  margin-right: 10px;
 }
-.facebook{
-  background: url(image_path('bt_channel_face.png')) repeat-x scroll center center #000000;
+.facebook , .facebook:hover{
+  background: url(image_path('bt_channel_face.png')) repeat-x scroll center center #E9EEEC;
 }
-.twitter{
-  background: url(image_path('bt_channel_twit.png')) repeat-x scroll center center #000000;
-}
-.instagram{
-  background: url(image_path('bt_channel_inst.png')) repeat-x scroll center center #000000;
-}
-.youtube{
-  background: url(image_path('bt_channel_yout.png')) repeat-x scroll center center #000000;
+.twitter, .twitter:hover{
+  background: url(image_path('bt_channel_twit.png')) repeat-x scroll center center #E9EEEC;
 }
 
-.ad{
-
+.instagram, .instagram:hover{
+  background: url(image_path('bt_channel_inst.png')) repeat-x scroll center center #E9EEEC;
+}
+.youtube, .youtube:hover{
+  background: url(image_path('bt_channel_yout.png')) repeat-x scroll center center #E9EEEC;
 }

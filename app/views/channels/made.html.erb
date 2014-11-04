@@ -13,7 +13,7 @@
   <%= stylesheet_link_tag "application", :media => "all" %>
   <style>
       .container_bg {
-          background: url("http://s3.amazonaws.com/s3.majorleaguegaming.com/tv-category-icons/image_backgrounds/325/original/Made_in_Brasil_Wallpaper.jpg?140856316") center -20px black;
+          background: url("<%= @canal[0]['image_background'] %>") center -20px black;
           min-width: 1000px;
       }
   </style>
@@ -106,7 +106,7 @@
             </div>
             <!-- CHAT -->
             <div id="hc" class="hc">
-              <div id="tlkio" data-channel="made" style="width:100%; height:400px;" data-theme="<%= root_url %>assets/stylesheets/chat.css"></div>
+              <div id="tlkio" data-channel="made" style="width:100%; height:400px;" ></div>
               <script async src="http://tlk.io/embed.js" type="text/javascript"></script>
             </div>
           </div>
@@ -136,8 +136,10 @@
         <div class="line"></div>
         <span class="channel_span">Made</span>
       </div>
-      <p class="text_p">Here you'll find everything regarding the oldest and newest FPS games!</p>
-    <div class="social_button_box">
+      <p class="text_p">
+          <%= @canal[0]['description'] %>
+      </p>
+      <div class="social_button_box">
       <a class="social_button twitter" href="#"></a>
       <a class="social_button facebook" href="#"></a>
       <a class="social_button youtube" href="#"></a>
@@ -148,7 +150,7 @@
         <span class="channel_span">Outros Canais</span>
       </div>
       <% @channels.each { |channel| %>
-          <a href="<%= channel['url'].gsub("http://tv.majorleaguegaming.com/channel/", "http://homepage.mlgbrasil.tv/channels/") %>">
+          <a href="<%= channel['url'].gsub("http://tv.majorleaguegaming.com/channel/", root_url+"/channels/") %>">
             <div class="channels">
               <%= image_tag(channel['image_16_9_medium'],class: 'channel-image') %>
               <% if channel['status'] == 'offline' %>

@@ -2,7 +2,7 @@
 class ChannelsController < ApplicationController
   layout 'channels'
 
-  def index
+def index
     @channels = MlgMetadata.get_channels_by_tag('MLG%20Brasil')
     @channels.each { |channel|
       stream_name = channel['stream_name']
@@ -17,11 +17,11 @@ class ChannelsController < ApplicationController
           channel['status'] = 'live'
       end
     }
-    end
+end
 
 def made
 
-  @canal = MlgMetadata.get_channels_by_tag('Made')
+  @canal = MlgMetadata.get_channels_by_id(325)
 
   @channels = MlgMetadata.get_channels_by_tag('MLG%20Brasil')
   @channels.each { |channel|
