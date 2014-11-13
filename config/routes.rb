@@ -15,8 +15,8 @@ Homepage::Application.routes.draw do
 
 
   get "channels/index"
-  match '/channels/made',     to: 'channels#made',             via: 'get'
-  resources "channels", only: [:made]
+  match '/channels/channel',     to: 'channels#channel',             via: 'get'
+  resources "channels", only: [:channel]
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

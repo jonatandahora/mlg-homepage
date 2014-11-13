@@ -4,7 +4,7 @@
   <span class="channel_span">Canais</span>
 </div>
 <% @channels.each { |channel| %>
-    <a href="<%= channel['url'] %>">
+    <a href="<%= '/channels/channel?id='+channel['id'].to_s+'&name='+channel['name'] %>">
       <div class="channels">
         <%= image_tag(channel['image_16_9_medium'],class: 'channel-image') %>
         <% if channel['status'] == 'offline' %>

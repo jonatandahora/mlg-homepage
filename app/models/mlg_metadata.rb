@@ -36,10 +36,10 @@ class MlgMetadata
     end
   end
 
-  def self.get_channel_by_name(name)
-    response = get("/api/channel/#{name}")
+  def self.get_specific_channel(id)
+    response = get("/api/channel/#{id}")
     if response['status_code'] == 200
-      return response['data']['items']
+      return response['data']
     end
   end
 
