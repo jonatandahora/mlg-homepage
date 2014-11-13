@@ -132,10 +132,18 @@
         <%= @canal['description'] %>
       </p>
       <div class="social_button_box">
-        <a class="social_button twitter" href="#"></a>
-        <a class="social_button facebook" href="#"></a>
-        <a class="social_button youtube" href="#"></a>
-        <a class="social_button instagram" href="#"></a>
+        <% if !@canal['social_twitter'].nil? %>
+              <a class="social_button twitter" href="<%="http://twitter.com/"+ @canal['social_twitter']%>"></a>
+        <% end %>
+        <% if !@canal['social_facebook'].nil? %>
+              <a class="social_button facebook" href="<%="http://facebook.com/"+ @canal['social_facebook']%>"></a>
+        <% end %>
+        <% if !@canal['social_youtube'].nil? %>
+              <a class="social_button youtube" href="<%="http://youtube.com/"+ @canal['social_youtube']%>"></a>
+        <% end %>
+        <% if !@canal['social_instagram'].nil? %>
+              <a class="social_button instagram" href="<%="http://instagram.com/"+ @canal['social_instagram']%>"></a>
+        <% end %>
       </div>
       <div class="tittle">
         <div class="line"></div>
