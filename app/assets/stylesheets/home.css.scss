@@ -14,3 +14,74 @@
 .banner-gb:hover{
   background-color: transparent;
 }
+
+.play-container {width:670px;}
+table{border-collapse: collapse; }
+.img_{height: 48px; margin-right: 2px;}
+.first-td {padding-left:0px;}
+.last-td {padding-right:0px;vertical-align:middle;vertical-align: top; }
+
+.money {color:#14AA26;}
+.title_ {font-weight:700;color:#444;font-size:16px;}
+.overflow-title {width:424px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.subtitle {font-weight:normal;color:#999999;font-size:12px;line-height:20px;}
+
+a {text-decoration:none;}
+a img {border:none;}
+
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.container_bg{
+  background: url(image_path('bg_player.jpg')) repeat-x scroll center center #000000;
+  min-width: 1000px;
+}
+.banner-gb{
+  margin-top: 35px;
+  display: block;
+}
+
+.banner-gb:hover{
+  background-color: transparent;
+}
+
+.button_ {
+  color: #FFF;
+  font-weight: 700;
+  font-size:14px;
+  line-height: 14px;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+  padding: 6px 30px;
+  margin: 0px;
+  border: 1px solid #015ca5;
+  -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #3c9be6;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#3c9be6), to(#1978c2));
+  background-image: -webkit-linear-gradient(top, #3c9be6, #1978c2);
+  background-image: -moz-linear-gradient(top, #3c9be6, #1978c2);
+  background-image: linear-gradient(to bottom, #3c9be6,#1978c2);
+  background-repeat: no-repeat;
+  background-position: left top;
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  vertical-align: middle;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+.button_:hover {
+  background-color: #026eda;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1978c2), to(#3c9be6));
+  background-image: -webkit-linear-gradient(top, #1978c2, #3c9be6);
+  background-image: -moz-linear-gradient(top, #1978c2, #3c9be6);
+  background-image: linear-gradient(to bottom, #1978c2,#3c9be6);
+}
+.subtable{margin: 8px 8px; width: 426px;}
