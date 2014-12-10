@@ -58,7 +58,7 @@ var MlgApiClient = function (a, b, c) {
     }, d.getContent = function () {
         if (d.is_refreshing)return;
         d.is_refreshing = !0, d.channels = [];
-        var a = ["id", "name", "slug", "subtitle", "stream_name", "type", "default_tab", "is_hidden", "image_1_1", "image_16_9_small", "image_16_9_medium", "image_background", "url", "embed_code", "stream_featured", "stream_sort_order", "tags", "tag_names", "children", "description", "new_chat"], b = "?tags=MLG%20Brasil&fields=";
+        var a = ["id", "name", "slug", "subtitle", "stream_name", "type", "default_tab", "is_hidden", "image_1_1", "image_16_9_small", "image_16_9_medium", "image_background", "url", "embed_code", "stream_featured", "stream_sort_order", "tags", "tag_names", "children", "description"], b = "?tags=MLG%20Brasil&fields=";
         for (var c = 0; c < a.length; c++)b += a[c], c < a.length - 1 && (b += ",");
         var e = "contentCallback" + d.KEY;
         window[e] = function (a) {
