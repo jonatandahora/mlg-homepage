@@ -14,7 +14,7 @@ cpu_cores = 1 if cpu_cores == 0
 puts "detected cpu cores: #{cpu_cores}"
 
 # 2.5 workers per core
-worker_processes Integer( 3 * cpu_cores)
+worker_processes Integer( 2 * cpu_cores)
 
 # Load rails+github.git into the master before forking workers
 # for super-fast worker spawn times
