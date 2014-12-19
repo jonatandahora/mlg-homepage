@@ -21,7 +21,10 @@ worker_processes Integer(60 / 24.0 * cpu_cores)
 preload_app true
 
 # Restart any workers that haven't responded in 120 seconds
-timeout 120
+timeout 15
+
+stderr_path "/opt/mlg-deploy/apps/homepage/current/log/unicorn.stderr.log"
+stdout_path "/opt/mlg-deploy/apps/homepage/current/log/unicorn.stdout.log"
 
 # Listen on a Unix data socket
 # default as per http://unicorn.bogomips.org/Unicorn/Configurator.html
