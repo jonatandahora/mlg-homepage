@@ -4,6 +4,7 @@ Homepage::Application.routes.draw do
   resources :tutoriais
 
   get "home/index"
+  get "public/loaderio-fc5d807f38a2814c352cfeb5d1aed337.txt"
   resources :contacts
 
   match '/contato',     to: 'contacts#new',             via: 'get'
