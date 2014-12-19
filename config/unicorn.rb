@@ -14,14 +14,14 @@ cpu_cores = 1 if cpu_cores == 0
 puts "detected cpu cores: #{cpu_cores}"
 
 # 2.5 workers per core
-worker_processes Integer( 2 * cpu_cores)
+worker_processes Integer( 3 * cpu_cores)
 
 # Load rails+github.git into the master before forking workers
 # for super-fast worker spawn times
 preload_app true
 
 # Restart any workers that haven't responded in 120 seconds
-timeout 15
+timeout 120
 
 stderr_path "/home/mlgdevel/log/unicorn.stderr.log"
 stdout_path "/home/mlgdevel/log/unicorn.stdout.log"
