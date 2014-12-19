@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .container_bg{
-  background: url(image_path('bg_player.jpg')) repeat-x scroll center center #000000;
+  //background: url(image_path('bg_player.jpg')) repeat-x scroll center center #000000;
   min-width: 1000px;
 }
 .banner-gb{
@@ -21,3 +21,17 @@
 a:hover{
   text-decoration: none;
 }
+body {
+//  background: url('http://planetabrasil.com.br/images/bg2.jpg') no-repeat center center fixed !important;
+  //background: url(image_path('csgo.jpg')) no-repeat center center fixed !important;
+
+  background: url(image_path('csgo.jpg')) no-repeat fixed 0 0 / 100% 100% transparent !important;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color:#fff;
+  background-color:#f6f6f6;
+}
+
+
