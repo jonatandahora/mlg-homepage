@@ -16,6 +16,7 @@
 //= require mlg_channel
 //= require mlg_model
 //= require mlg_view
+//= require mlg_tv_channels
 //= require swfobject
 //= require bootstrap_min
 //= require socialize
