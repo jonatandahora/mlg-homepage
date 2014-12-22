@@ -1,5 +1,10 @@
 Homepage::Application.routes.draw do
 
+  get "vagas/index"
+  match '/vagas/web_designer',     to: 'vagas#web_designer',             via: 'get'
+  resources "vagas", only: [:web_designer]
+
+
   get "tutoriais/index"
   resources :tutoriais
 
@@ -37,6 +42,7 @@ Homepage::Application.routes.draw do
   resources :quem_somos
   resources :mlg_na_midia
   resources :channels
+
 
   # Example resource route with options:
   #   resources :products do
