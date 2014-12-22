@@ -1,9 +1,10 @@
 Homepage::Application.routes.draw do
 
   get "vagas/index"
+  resources :vagas
+
   match '/vagas/web_designer',     to: 'vagas#web_designer',             via: 'get'
   resources "vagas", only: [:web_designer]
-
 
   get "tutoriais/index"
   resources :tutoriais
