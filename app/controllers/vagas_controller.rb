@@ -3,4 +3,6 @@ class VagasController < ApplicationController
 
   def index
   end
+  def web_designer
+  end
 end

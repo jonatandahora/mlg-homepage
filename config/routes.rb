@@ -1,10 +1,10 @@
 Homepage::Application.routes.draw do
 
-  get "vagas/index"
-  resources :vagas
+  #get "vagas/index"
+ # resources :vagas
 
   match '/vagas/web_designer',     to: 'vagas#web_designer',             via: 'get'
-  resources "vagas", only: [:web_designer]
+  match '/vagas',     to: 'vagas#index',             via: 'get'
 
   get "tutoriais/index"
   resources :tutoriais
@@ -15,6 +15,7 @@ Homepage::Application.routes.draw do
   match '/contato',     to: 'contacts#new',             via: 'get'
   match '/contato',     to: 'contacts#create',             via: 'post'
   resources "contato", only: [:new, :create]
+
   get "mlg_brasil_na_midia/index"
   get "nosso_time/index"
   get "quem_somos/index"
