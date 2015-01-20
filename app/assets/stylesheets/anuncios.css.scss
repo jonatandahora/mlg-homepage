@@ -6,12 +6,21 @@
 .bt_anuncios{
   color: #FFFFFF;
   background-color:#17773f;
-  border: 1px solid #17773f;
   padding: 10px 30px;
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
   border-radius: 12px;
-  margin-top: 10px;
-  margin-left: 200px;
+  margin-left: 180px;
   font-family: quicksandbold, Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:visited{
+    color: #FFFFFF;
+    text-decoration: none;
+
+  }
+  &:hover{
+    text-decoration: none;
+  }
 }
