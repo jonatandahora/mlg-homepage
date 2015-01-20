@@ -1,12 +1,13 @@
 Homepage::Application.routes.draw do
 
+  get "anuncios/index"
   root 'home#index'
   get "home/index"
   get "channels/index"
   match '/channels/channel',     to: 'channels#channel',             via: 'get'
   resources "channels", only: [:channel]
   resources :channels
-
+  match 'anuncios', to: 'anuncios#index', via: 'get'
   match 'vagas/web_designer', to: 'vagas#web_designer', via: 'get'
   match 'vagas', to: 'vagas#index', via: 'get'
   match 'tutoriais', to: 'tutoriais#index', via: 'get'
