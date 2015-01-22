@@ -6,7 +6,7 @@ Homepage::Application.routes.draw do
   get "channels/index"
   match '/channels/channel',     to: 'channels#channel',             via: 'get'
   resources "channels", only: [:channel]
-  resources :channels
+  #resources :channels
   match 'anuncios', to: 'anuncios#index', via: 'get'
   match 'vagas/web_designer', to: 'vagas#web_designer', via: 'get'
   match 'vagas', to: 'vagas#index', via: 'get'
